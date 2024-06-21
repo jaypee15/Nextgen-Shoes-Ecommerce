@@ -107,17 +107,13 @@ The backend team should create their feature branches from the `backend` branch.
    git checkout backend
    ```
 
-2. **Pull the latest changes**:
+
+2. **Create a new feature branch**:
    ```sh
-   git pull origin backend
+   git checkout -b feature/your-feature-name
    ```
 
-3. **Create a new feature branch**:
-   ```sh
-   git checkout -b feature/backend/your-feature-name
-   ```
-
-4. **Set up the development environment**:
+3. **Set up the development environment**:
    - Ensure you have npm installed 
 
    - Install dependencies:
@@ -130,12 +126,12 @@ The backend team should create their feature branches from the `backend` branch.
      ```
 After working on the feature
 
-5. **Commit your changes** and push the feature branch:
+1. **Commit your changes** and push the feature branch:
    ```sh
    git add .
    git commit -m "Add feature: your feature description"
    ```
-6. **Sync with the local main branch**
+2. **Sync with the local main branch**
 
     ```sh
     git checkout main
@@ -143,11 +139,11 @@ After working on the feature
     git checkout feature/your-feature-name
     git merge main
     ```
-7. **Push the feature branch**
+3. **Push the feature branch**
    ```sh
     git push origin feature/your-feature-name
    ```
-8. **Go to GithHub and create a Pull request**
+4. **Go to GithHub and create a Pull request**
 
 
 
