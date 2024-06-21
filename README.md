@@ -131,19 +131,19 @@ After working on the feature
    git add .
    git commit -m "Add feature: your feature description"
    ```
-2. **Sync with the local main branch**
+2. **Sync with the local backend branch**
 
     ```sh
-    git checkout main
-    git pull origin main
+    git checkout backend
+    git pull origin backend
     git checkout feature/your-feature-name
-    git merge main
+    git merge backen
     ```
 3. **Push the feature branch**
    ```sh
     git push origin feature/your-feature-name
    ```
-4. **Go to GithHub and create a Pull request**
+4. **Go to GithHub and create a Pull request to the remote backend branch**
 
 
 
