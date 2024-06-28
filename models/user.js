@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const bcrypt = require("bcrypt");
 
 const UserSchema = new mongoose.Schema(
   {
@@ -22,11 +23,6 @@ const UserSchema = new mongoose.Schema(
       lowerCase: true,
     },
 
-    //   role: {
-    //     type: String,
-    //     emun: ["admin", "buyer", "seller"],
-    //     default: "buyer",
-    //   },
     phoneNumber: { type: String, required: true, trim: true },
     password: {
       type: String,
