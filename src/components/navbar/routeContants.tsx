@@ -29,7 +29,7 @@ export const QueryItems = () => {
         <div className="lg:flex items-center">
             <div className="relative lg:px-10">
                 <IoSearchOutline className="absolute top-3 text-lg text-[#000] lg:left-12 left-5"/>
-                <Input className="text-[#000] rounded-full lg:px-8 px-10" placeholder="Search"/>
+                <Input className="text-[#000] font-bold rounded-full lg:px-8 px-10" placeholder="Search"/>
             </div>
             <div className="flex gap-5 lg:mt-0 mt-5">
                 <RiExchangeDollarFill size={25}/>

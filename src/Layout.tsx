@@ -3,7 +3,7 @@ import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navigation from "./components/navbar/Navigation.tsx";
 import Container from "./Container.tsx";
-import Footer from "./components/Footer.tsx";
+import Footer from "./components/footer/Footer.tsx";
 
 const Layout = () => {
     return (
