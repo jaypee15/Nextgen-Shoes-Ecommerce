@@ -11,7 +11,7 @@ const ProductDetailsComponent = () => {
                     <h1 className="text-[40px] leading-10 font-bold">
                         KNOW ABOUT YOUR <br/> MAIN <span className="text-[#E0551B]">PRODUCT</span>
                     </h1>
-                    <p className="text-sm">
+                    <p className="flex flex-wrap text-sm">
                         Experience unparalleled comfort and iconic style with the Nike <br/> Air Max, featuring
                         revolutionary Air cushioning technology and <br/> a breathable, durable design. Perfect for
                         running, casual wear, <br/> and sports activities.
