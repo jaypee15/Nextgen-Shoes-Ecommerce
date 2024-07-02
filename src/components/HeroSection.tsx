@@ -4,7 +4,7 @@ import heroImage from "../../src/assets/pngwing.com 1.png";
 
 const HeroSection = () => {
     return (
-        <div className="bg-gradient-to-b from-[#180a01] to-[#6e3002] text-[#fff] h-[480px] pt-10">
+        <div className="bg-gradient-to-b from-[#180a01] to-[#6e3002] text-[#fff] pt-10">
             <Container>
                 <div className="md:flex justify-center items-center gap-20">
                     <div className="flex flex-col gap-5">
