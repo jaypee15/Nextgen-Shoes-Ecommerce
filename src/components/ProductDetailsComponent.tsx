@@ -6,7 +6,7 @@ const ProductDetailsComponent = () => {
     return (
         <Container>
             <div className="flex lg:flex-row flex-col-reverse justify-center items-center gap-20 mb-10">
-                <div className="flex flex-col gap-5">o
+                <div className="flex flex-col gap-5">
                     <h2 className="text-[#E0551B] text-[20px] font-bold ">Product Details</h2>
                     <h1 className="text-[40px] leading-10 font-bold">
                         KNOW ABOUT YOUR <br/> MAIN <span className="text-[#E0551B]">PRODUCT</span>
