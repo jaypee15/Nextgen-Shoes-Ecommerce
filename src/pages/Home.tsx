@@ -1,9 +1,9 @@
-import {Button} from "../components/ui/button.tsx";
+import HeroSection from "../components/HeroSection.tsx";
 
 const Home = () => {
     return (
         <div>
-            <Button>Submit</Button>
+            <HeroSection/>
         </div>
     );
 };
