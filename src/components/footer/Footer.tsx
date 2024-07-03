@@ -18,6 +18,7 @@ const Footer = () => {
                         <div className="relative">
                             <FaRegEnvelope className="absolute top-3 text-[#909090] left-3" size={20}/>
                             <Input
+                                type="email"
                                 className="text-[#180a00] bg-inherit border border-[#909090] font-bold px-10"
                                 placeholder="Enter your email address"
                             />
