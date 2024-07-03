@@ -4,11 +4,11 @@ import heroImage from "../../src/assets/pngwing.com 1.png";
 
 const HeroSection = () => {
     return (
-        <div className="bg-gradient-to-b from-[#180a01] to-[#6e3002] text-[#fff] pt-10">
+        <div className="bg-gradient-to-b from-[#180a01] to-[#6e3002] text-[#fff] py-10">
             <Container>
                 <div className="md:flex justify-center items-center gap-20">
                     <div className="flex flex-col gap-5">
-                        <h1 className="lg:text-[64px] md:text-[50px] text-[40px] md:leading-[75.84px] leading-10 font-bold">
+                        <h1 className="lg:text-[64px] md:text-[70px] text-[40px] md:leading-[65px] leading-10 font-bold">
                             Discover your <br/> best shoes
                         </h1>
                         <p className="text-[20px] leading-[23.7px]">
