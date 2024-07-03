@@ -10,6 +10,7 @@ import Favorites from "./pages/Favorites.tsx";
 import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
 import ProductDetails from "./pages/ProductDetails.tsx";
+import SearchResults from "./components/navbar/SearchResults.tsx";
 
 const Routes = () => {
     return createBrowserRouter([
@@ -26,6 +27,7 @@ const Routes = () => {
                 {path: "cart", element: <Cart/>},
                 {path: "product/:id", element: <ProductDetails/>},
                 {path: "favorites", element: <Favorites/>},
+                {path: "search", element: <SearchResults/>},
             ],
             errorElement: <ErrorPage/>,
         }
