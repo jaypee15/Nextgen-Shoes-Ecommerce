@@ -1,3 +1,5 @@
+import React, {ChangeEvent, FormEvent, useState} from "react";
+import {useNavigate} from "react-router-dom";
 import {Input} from "../ui/input.tsx";
 import {IoSearchOutline} from "react-icons/io5";
 import {FaRegHeart} from "react-icons/fa";
@@ -24,13 +26,29 @@ export const headerLinks = [
     }
 ];
 
-export const QueryItems = () => {
+export const QueryItems: React.FC = () => {
+    const [searchQuery, setSearchQuery] = useState<string>("");
+    const navigate = useNavigate();
+
+    const handleSearch = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        if (searchQuery.trim()) {
+            navigate(`/search?q=${encodeURIComponent(searchQuery)}`);
+            setSearchQuery(""); // reset the search query on successful search
+        }
+    };
+
     return (
         <div className="lg:flex items-center">
-            <div className="relative lg:px-10">
+            <form onSubmit={handleSearch} className="relative lg:px-10">
                 <IoSearchOutline className="absolute top-3 text-lg text-[#000] lg:left-12 left-5"/>
-                <Input className="text-[#000] font-bold rounded-full lg:px-8 px-10" placeholder="Search"/>
-            </div>
+                <Input
+                    className="text-[#000] font-bold rounded-full lg:px-8 px-10"
+                    placeholder="Search"
+                    value={searchQuery}
+                    onChange={(e: ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
+                />
+            </form>
             <div className="flex gap-5 lg:mt-0 mt-5">
                 <RiExchangeDollarFill size={25}/>
                 <Link to="/favorites">
