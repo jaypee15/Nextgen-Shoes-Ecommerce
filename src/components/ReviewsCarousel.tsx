@@ -1,4 +1,4 @@
-import {Carousel, CarouselContent, CarouselItem} from "./ui/carousel.tsx";
+import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "./ui/carousel.tsx";
 import lady from "../assets/Ellipse 2310 (1).png";
 import man from "../assets/Ellipse 2310.png";
 import {IoStar} from "react-icons/io5";
@@ -106,6 +106,10 @@ const ReviewsCarousel = () => {
                         </div>
                     </CarouselItem>
                 </CarouselContent>
+                <div className="lg:block hidden">
+                    <CarouselPrevious/>
+                    <CarouselNext/>
+                </div>
             </Carousel>
         </div>
     );
