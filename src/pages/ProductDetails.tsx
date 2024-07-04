@@ -1,12 +1,11 @@
 import Container from "../Container.tsx";
+import ComingSoon from "@/components/ComingSoon.tsx";
 
 const ProductDetails = () => {
     return (
         <div>
             <Container>
-                <div className="py-10">
-                    ProductDetails
-                </div>
+                <ComingSoon/>
             </Container>
         </div>
     );
